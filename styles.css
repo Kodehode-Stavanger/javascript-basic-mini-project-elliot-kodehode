@@ -113,8 +113,9 @@ body {
 
 @media only screen and (max-width: 720px) {
   body {
+    margin: 0px;
     height: 100vh;
-    justify-content: start;
+    justify-content: center;
     background: darkslategrey;
     gap: 10px;
     overflow: hidden;
