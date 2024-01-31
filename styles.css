@@ -1,0 +1,152 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: fantasy;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(46, 59, 57);
+  align-items: center;
+  justify-content: center;
+  background: url(bg2.png);
+  background-size: cover;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 1080px;
+  height: 60vh;
+  background-color: rgb(93, 68, 50);
+  gap: 10px;
+  border-radius: 4px;
+  padding: 6px;
+  border: 2px solid rgb(50, 22, 22);
+  box-shadow: 5px 5px rgb(23, 23, 23);
+}
+
+#ateam,
+#bteam {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* min-width: 300px; */
+  height: 100%;
+  /* background-color: antiquewhite; */
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  padding: 46px 12px;
+}
+#ateam {
+  background-color: rgb(240, 223, 174);
+}
+#bteam {
+  background-color: rgb(170, 229, 210);
+}
+
+.team {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
+}
+
+.change {
+  border-radius: 3px;
+  font-size: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 0.5;
+  height: 50px;
+}
+.change:hover {
+  transform: translateY(-3px) scale(1.01);
+}
+#b-add,
+#a-add {
+  background-color: rgb(149, 243, 149);
+  color: rgb(50, 50, 50);
+}
+#b-subtract,
+#a-subtract {
+  background-color: rgb(252, 98, 93);
+  color: rgb(50, 50, 50);
+}
+
+.score {
+  font-size: 90px;
+  color: rgb(50, 50, 50);
+}
+
+#winner {
+  margin: 16px 0px;
+  font-size: 50px;
+  color: white;
+}
+
+#refresh {
+  font-size: 18px;
+  font-family: cursive;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: rgb(255, 233, 192);
+}
+#refresh:hover {
+  transform: scale(1.05);
+}
+
+.change-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    margin: 0px;
+    height: 100vh;
+    justify-content: center;
+    background: darkslategrey;
+    gap: 10px;
+    overflow: hidden;
+  }
+  #container {
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    background: none;
+  }
+
+  #ateam,
+  #bteam {
+    width: 90vw;
+    padding: 15px 0px;
+  }
+  #winner {
+    font-size: 25px;
+  }
+  .change:hover {
+    transform: none;
+  }
+  #refresh,
+  #refresh:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: scale(1.2);
+    background-color: rgb(198, 76, 76);
+    color: white;
+    margin: 0px;
+  }
+}
