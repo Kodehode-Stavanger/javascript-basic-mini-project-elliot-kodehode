@@ -116,6 +116,7 @@ body {
     height: 100vh;
     justify-content: center;
     background: darkslategrey;
+    gap: 10px;
     overflow: hidden;
   }
   #container {
