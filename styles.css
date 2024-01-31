@@ -113,8 +113,8 @@ body {
 
 @media only screen and (max-width: 720px) {
   body {
+    height: 100vh;
     justify-content: space-evenly;
-    padding-top: 16px;
     background: darkslategrey;
   }
   #container {
@@ -140,7 +140,8 @@ body {
   }
   #refresh,
   #refresh:hover {
-    transform: scale(1.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: scale(1.2);
     background-color: rgb(198, 76, 76);
     color: white;
   }
