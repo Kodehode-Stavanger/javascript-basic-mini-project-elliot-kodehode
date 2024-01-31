@@ -116,11 +116,12 @@ body {
     height: 100vh;
     justify-content: space-evenly;
     background: darkslategrey;
+    overflow: hidden;
   }
   #container {
     border: none;
     box-shadow: none;
-
+    padding-top: 0;
     height: fit-content;
     width: fit-content;
     flex-direction: column;
@@ -130,7 +131,7 @@ body {
   #ateam,
   #bteam {
     width: 90vw;
-    padding: 20px 0px;
+    padding: 15px 0px;
   }
   #winner {
     display: none;
